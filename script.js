@@ -47,9 +47,9 @@ location:"Sitio Tapis, Tambongon, Pantukan, Davao de Oro",
 description:"Peak Dakey is a scenic hiking destination located in Sitio Tapis, Brgy. Tambongon, Pantukan, Davao de Oro. Known for its breathtaking mountain views, cool fresh air, and peaceful natural surroundings, it offers an unforgettable trekking experience for both beginners and seasoned hikers. Reaching the summit rewards visitors with panoramic views of the lush landscapes, making it a perfect spot for sunrise hikes, camping, photography, and reconnecting with nature.",
 facebook:"https://facebook.com/",
 images:[
-    "images/DK1.jpeg",
-    "images/dk4.jpeg",
-    "images/Dk2.jpeg",
+    "images/DK1.jpg",
+    "images/dk4.jpg",
+    "images/Dk2.jpg",
     "images/dk5.jpg"
 ]
 },
