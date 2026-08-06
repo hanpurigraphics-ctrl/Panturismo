@@ -399,7 +399,6 @@ font-size: 25px;
 }
 
 /* Close Button */
-
 .close{
 
     position:absolute;
@@ -409,7 +408,6 @@ font-size: 25px;
     right:18px;
 
     width:42px;
-
     height:42px;
 
     border-radius:50%;
@@ -431,6 +429,8 @@ font-size: 25px;
     transition:.25s;
 
     box-shadow:0 10px 20px rgba(0,0,0,.15);
+
+    z-index:99999;      /* ADD THIS */
 
 }
 
@@ -651,6 +651,8 @@ font-size: 25px;
     font-size:20px;
 
     transition:.3s;
+
+    z-index:5;
 
 }
 

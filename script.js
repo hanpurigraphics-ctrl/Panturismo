@@ -3,24 +3,30 @@ const destinations = [
 {
 id:1,
 name:"Pantukan Water World",
-category:"Resort",
+category:["Resort","Pickleball"],
 location:"Kingking, Pantukan",
 description:"A family-friendly beach resort with swimming pools and cottages perfect for weekend getaways.",
 facebook:"https://www.facebook.com/pantukanwa",
-image: "images/PantukanWaterWorld.jpg"
+images:[
+    "images/PantukanWaterWorld.jpg",
+    "images/PWW1.jpg",
+    "images/PWW2.jpg",
+    "images/PWW3.jpg"
+]
 },
 
 {
 id:2,
 name:"Magnaga Waters",
-category:"Resort",
-location:"Magnaga, Pantukan",
+category:["Resort","Pickleball"],
+location:"Magnaga, Pantukan, Davao de Oro",
 description:"A relaxing beach destination known for its clear waters and peaceful atmosphere.",
 facebook:"https://facebook.com/",
 images:[
     "images/MagnagaWaters.jpg",
-    "images/MagnagaWaters2.jpg",
-    "images/MagnagaWaters3.jpg"
+    "images/MW1.jpg",
+    "images/MW2.jpg",
+    "images/MW3.jpg"
 ]
 },
 {
@@ -35,32 +41,33 @@ image:"images/ASFPickle.jpg"
 
 {
 id:4,
-name:"Forest Adventure",
+name:"Peak Dakey",
 category:"Adventure",
-location:"Kingking, Pantukan",
-description:"Enjoy hiking, nature trails, and outdoor adventures surrounded by lush greenery.",
+location:"Sitio Tapis, Tambongon, Pantukan, Davao de Oro",
+description:"Peak Dakey is a scenic hiking destination located in Sitio Tapis, Brgy. Tambongon, Pantukan, Davao de Oro. Known for its breathtaking mountain views, cool fresh air, and peaceful natural surroundings, it offers an unforgettable trekking experience for both beginners and seasoned hikers. Reaching the summit rewards visitors with panoramic views of the lush landscapes, making it a perfect spot for sunrise hikes, camping, photography, and reconnecting with nature.",
 facebook:"https://facebook.com/",
-image:"https://images.unsplash.com/photo-1500530855697-b586d89ba3ee"
+images:[
+    "images/DK1.jpeg",
+    "images/dk4.jpeg",
+    "images/Dk2.jpeg",
+    "images/dk5.jpg"
+]
 },
 
-{
-id:5,
-name:"Mountain View Park",
-category:"Park",
-location:"Poblacion, Pantukan",
-description:"A scenic park offering beautiful mountain views and a relaxing environment.",
-facebook:"https://facebook.com/",
-image:"https://images.unsplash.com/photo-1472396961693-142e6e269027"
-},
 
 {
 id:6,
-name:"Seafood Diner",
+name:"Leonora's Café and Resto",
 category:"Restaurant",
-location:"Magnaga, Pantukan",
-description:"Fresh seafood served daily with a relaxing seaside dining experience.",
+location:"Poblacion, Kingking, Pantukan, Davao de Oro",
+description:"Leonora's Café and Resto is a charming dining destination in Pantukan that blends vintage-inspired architecture with a warm and inviting atmosphere. Surrounded by lush gardens and classic Filipino design, it offers a cozy setting perfect for family gatherings, casual meetups, and relaxing meals. Guests can enjoy delicious food, handcrafted beverages, and a peaceful ambiance that combines timeless elegance with modern comfort.",
 facebook:"https://facebook.com/",
-image:"https://images.unsplash.com/photo-1517248135467-4c7edcad34c4"
+images:[
+    "images/LCR0.jpg",
+    "images/LCR1.jpg",
+    "images/LCR2.jpg",
+    "images/LCR3.jpg"
+]
 }
 
 ];
@@ -120,7 +127,11 @@ container.innerHTML+=`
 
 <div class="info">
 
-<span class="badge">${place.category}</span>
+<span class="badge">
+    ${Array.isArray(place.category)
+        ? place.category.join(" | ")
+        : place.category}
+</span>
 
 <h3>${place.name}</h3>
 
@@ -304,10 +315,12 @@ place.name.toLowerCase().includes(text) ||
 place.location.toLowerCase().includes(text);
 
 const matchesCategory =
-
-category==="all" ||
-
-place.category===category;
+    category === "all" ||
+    (
+        Array.isArray(place.category)
+            ? place.category.includes(category)
+            : place.category === category
+    );
 
 return matchesSearch && matchesCategory;
 
