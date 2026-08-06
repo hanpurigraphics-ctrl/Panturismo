@@ -26,9 +26,7 @@
 </header>
 <section class="hero">
 
-    <video autoplay muted loop playsinline class="hero-video">
-        <source src="DJI_0262.MP4" type="video/mp4">
-    </video>
+    <img src="Dron2.png" alt="Pantukan" class="hero-image">
 
     <div class="hero-overlay"></div>
 
@@ -65,33 +63,41 @@
 <section class="cards" id="cardsContainer">
 
 </section>
-
 <!-- MODAL -->
 
 <div class="modal" id="destinationModal">
 
-<div class="modal-box">
+    <div class="modal-box">
 
-<span class="close">&times;</span>
+        <span class="close">&times;</span>
 
-<img id="modalImage" src="" alt="Destination">
+        <div class="modal-gallery">
 
-<div class="modal-content">
+            <img id="modalMainImage" class="main-image" src="" alt="">
 
-<span id="modalCategory" class="modal-category"></span>
+            <button class="gallery-btn prev" id="prevBtn">&#10094;</button>
+            <button class="gallery-btn next" id="nextBtn">&#10095;</button>
 
-<h2 id="modalTitle"></h2>
+            <div class="thumbnail-container" id="thumbnailContainer"></div>
 
-<p id="modalDescription"></p>
+        </div>
 
-<div class="modal-info">
+        <div class="modal-content">
 
-<p><strong> Address</strong></p>
-<p id="modalAddress"></p>
+            <span id="modalCategory" class="modal-category"></span>
 
-</div>
+            <h2 id="modalTitle"></h2>
 
-<a
+            <p id="modalDescription"></p>
+
+            <div class="modal-info">
+
+                <p><strong>Address</strong></p>
+                <p id="modalAddress"></p>
+
+            </div>
+
+         <a
 id="modalFacebook"
 class="facebook-btn"
 target="_blank">
@@ -99,6 +105,14 @@ target="_blank">
 Visit Facebook Page
 
 </a>
+
+
+        </div>
+
+    </div>
+
+</div>
+
 
 </div>
 

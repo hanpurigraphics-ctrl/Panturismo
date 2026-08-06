@@ -6,7 +6,7 @@ name:"Pantukan Water World",
 category:"Resort",
 location:"Kingking, Pantukan",
 description:"A family-friendly beach resort with swimming pools and cottages perfect for weekend getaways.",
-facebook:"https://facebook.com/",
+facebook:"https://www.facebook.com/pantukanwa",
 image: "images/PantukanWaterWorld.jpg"
 },
 
@@ -17,17 +17,20 @@ category:"Resort",
 location:"Magnaga, Pantukan",
 description:"A relaxing beach destination known for its clear waters and peaceful atmosphere.",
 facebook:"https://facebook.com/",
-image:"images/MagnagaWaters.jpg"
+images:[
+    "images/MagnagaWaters.jpg",
+    "images/MagnagaWaters2.jpg",
+    "images/MagnagaWaters3.jpg"
+]
 },
-
 {
 id:3,
-name:"Pantukan Pickleball Court",
+name:"ASF Pickle Ball Court",
 category:"Pickleball",
-location:"Poblacion, Pantukan",
-description:"A community pickleball court open for beginners and experienced players.",
+location:"Townsite,Kingking,Pantukan, Davao de Oro",
+description:"A  pickleball court open for beginners and experienced players.",
 facebook:"https://facebook.com/",
-image:"https://images.unsplash.com/photo-1546519638-68e109498ffc"
+image:"images/ASFPickle.jpg"
 },
 
 {
@@ -67,8 +70,14 @@ image:"https://images.unsplash.com/photo-1517248135467-4c7edcad34c4"
 const container = document.getElementById("cardsContainer");
 
 const modal = document.getElementById("destinationModal");
+const modalMainImage = document.getElementById("modalMainImage");
+const thumbnailContainer = document.getElementById("thumbnailContainer");
 
-const modalImage = document.getElementById("modalImage");
+const prevBtn = document.getElementById("prevBtn");
+const nextBtn = document.getElementById("nextBtn");
+
+let galleryImages = [];
+let currentImage = 0;
 const modalTitle = document.getElementById("modalTitle");
 const modalCategory = document.getElementById("modalCategory");
 const modalDescription = document.getElementById("modalDescription");
@@ -78,7 +87,6 @@ const modalFacebook = document.getElementById("modalFacebook");
 const closeBtn = document.querySelector(".close");
 
 // ----------------------------
-
 function displayCards(list){
 
 container.innerHTML="";
@@ -102,11 +110,13 @@ return;
 
 list.forEach(place=>{
 
+const coverImage = place.images?.[0] || place.image;
+
 container.innerHTML+=`
 
 <div class="card" data-id="${place.id}">
 
-<img src="${place.image}" alt="${place.name}">
+<img src="${coverImage}" alt="${place.name}">
 
 <div class="info">
 
@@ -145,20 +155,21 @@ openModal(id);
 
 function openModal(id){
 
-const place = destinations.find(item=>item.id===id);
+    const place = destinations.find(item=>item.id===id);
 
-if(!place) return;
+    if(!place) return;
 
-modalImage.src = place.image;
-modalTitle.textContent = place.name;
-modalCategory.textContent = place.category;
-modalDescription.textContent = place.description;
-modalAddress.textContent = place.location;
-modalFacebook.href = place.facebook;
+    loadGallery(place.images || [place.image]);
 
-modal.style.display="flex";
+    modalTitle.textContent = place.name;
+    modalCategory.textContent = place.category;
+    modalDescription.textContent = place.description;
+    modalAddress.textContent = place.location;
+    modalFacebook.href = place.facebook;
 
-document.body.style.overflow="hidden";
+    modal.style.display = "flex";
+
+    document.body.style.overflow = "hidden";
 
 }
 
@@ -196,6 +207,78 @@ closeModal();
 
 });
 
+// ============================
+// GALLERY FUNCTIONS
+// ============================
+
+function loadGallery(images){
+
+    galleryImages = images;
+    currentImage = 0;
+
+    updateGallery();
+
+}
+
+function updateGallery(){
+
+    modalMainImage.src = galleryImages[currentImage];
+
+    thumbnailContainer.innerHTML = "";
+
+    galleryImages.forEach((image,index)=>{
+
+        const img = document.createElement("img");
+
+        img.src = image;
+
+        if(index === currentImage){
+
+            img.classList.add("active");
+
+        }
+
+        img.onclick = ()=>{
+
+            currentImage = index;
+
+            updateGallery();
+
+        }
+
+        thumbnailContainer.appendChild(img);
+
+    });
+
+}
+
+prevBtn.onclick = ()=>{
+
+    currentImage--;
+
+    if(currentImage < 0){
+
+        currentImage = galleryImages.length - 1;
+
+    }
+
+    updateGallery();
+
+}
+
+nextBtn.onclick = ()=>{
+
+    currentImage++;
+
+    if(currentImage >= galleryImages.length){
+
+        currentImage = 0;
+
+    }
+
+    updateGallery();
+
+}
 // ----------------------------
 
 displayCards(destinations);
