@@ -54,6 +54,20 @@ images:[
 ]
 },
 
+{
+id:7,
+name:"PCCC HOSTEL & TRAINING CENTER",
+category:["Resort","Pickleball"],
+location:"Kingking, Pantukan",
+description:"A family-friendly beach resort with swimming pools and cottages perfect for weekend getaways.",
+facebook:"https://www.facebook.com/pantukanwa",
+images:[
+    "images/PantukanWaterWorld.jpg",
+    "images/PWW1.jpg",
+    "images/PWW2.jpg",
+    "images/PWW3.jpg"
+]
+},
 
 {
 id:6,

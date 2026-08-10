@@ -1,0 +1,13 @@
+{
+  "background_color": "#ffffff",
+  "dir": "ltr",
+  "display": "standalone",
+  "name": "Panturismo",
+  "orientation": "any",
+  "scope": "/",
+  "short_name": "Panturismo",
+  "start_url": "/https://panturismo.vercel.app/",
+  "theme_color": "#ffffff",
+  "id": "panturismo",
+  "description": "Discover destinations, resorts, activities, and places to explore in Pantukan with Panturismo."
+}
