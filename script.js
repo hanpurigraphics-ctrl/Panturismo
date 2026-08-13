@@ -1,9 +1,24 @@
 const destinations = [
 
 {
+id:6,
+name:"Leonora's Café and Resto",
+category:["Restaurant","Coffee Shop"],
+location:"Poblacion, Kingking, Pantukan, Davao de Oro",
+description:"Leonora's Café and Resto is a charming dining destination in Pantukan that blends vintage-inspired architecture with a warm and inviting atmosphere. Surrounded by lush gardens and classic Filipino design, it offers a cozy setting perfect for family gatherings, casual meetups, and relaxing meals. Guests can enjoy delicious food, handcrafted beverages, and a peaceful ambiance that combines timeless elegance with modern comfort.",
+facebook:"https://facebook.com/",
+images:[
+    "images/LCR0.jpg",
+    "images/LCR1.jpg",
+    "images/LCR2.jpg",
+    "images/LCR3.jpg"
+]
+},
+    
+{
 id:1,
 name:"Pantukan Water World",
-category:["Resort","Pickleball"],
+category:["Resort","Pickleball","Accomodation"],
 location:"Kingking, Pantukan",
 description:"A family-friendly beach resort with swimming pools and cottages perfect for weekend getaways.",
 facebook:"https://www.facebook.com/pantukanwa",
@@ -18,7 +33,7 @@ images:[
 {
 id:2,
 name:"Magnaga Waters",
-category:["Resort","Pickleball"],
+category:["Resort","Pickleball","Accomodation"],
 location:"Magnaga, Pantukan, Davao de Oro",
 description:"A relaxing beach destination known for its clear waters and peaceful atmosphere.",
 facebook:"https://facebook.com/",
@@ -57,32 +72,32 @@ images:[
 {
 id:7,
 name:"PCCC HOSTEL & TRAINING CENTER",
-category:["Resort","Pickleball"],
-location:"Kingking, Pantukan",
-description:"A family-friendly beach resort with swimming pools and cottages perfect for weekend getaways.",
+category:["Accomodation"],
+location:"Nat'l Highway, Kingking, Pantukan",
+description:"PCCMPC Hostel & Training Center offers comfortable accommodation and a convenient venue for seminars, workshops, training programs, and cooperative activities. It provides a welcoming space for guests, participants, and organizations looking for a practical place to stay, learn, and connect in Pantukan.",
 facebook:"https://www.facebook.com/pantukanwa",
 images:[
-    "images/PantukanWaterWorld.jpg",
-    "images/PWW1.jpg",
-    "images/PWW2.jpg",
-    "images/PWW3.jpg"
+    "images/Hostel1.jpg",
+    "images/Hostel4.png",
+
 ]
 },
 
 {
-id:6,
-name:"Leonora's Café and Resto",
-category:"Restaurant",
+id:8,
+name:"Braytside Bakery & Cafe",
+category:["Restaurant","Coffee Shop"],
 location:"Poblacion, Kingking, Pantukan, Davao de Oro",
-description:"Leonora's Café and Resto is a charming dining destination in Pantukan that blends vintage-inspired architecture with a warm and inviting atmosphere. Surrounded by lush gardens and classic Filipino design, it offers a cozy setting perfect for family gatherings, casual meetups, and relaxing meals. Guests can enjoy delicious food, handcrafted beverages, and a peaceful ambiance that combines timeless elegance with modern comfort.",
+description:"Braytside Bakery & Coffee is a cozy local spot offering freshly baked treats, delicious coffee, and a welcoming atmosphere. Perfect for a quick snack, coffee break, or relaxing time with family and friends.",
 facebook:"https://facebook.com/",
 images:[
-    "images/LCR0.jpg",
-    "images/LCR1.jpg",
-    "images/LCR2.jpg",
-    "images/LCR3.jpg"
+    "images/Braytside0.webp",
+    "images/Braytside1.webp",
+    "images/Braytside2.webp",
+    "images/Braytside3.webp"
 ]
 }
+
 
 ];
 
