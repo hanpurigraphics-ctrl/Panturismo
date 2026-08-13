@@ -33,7 +33,7 @@ images:[
 {
 id:2,
 name:"Magnaga Waters",
-category:["Resort","Pickleball","Accomodation"],
+category:["Resort","Pickleball","Accommodation"],
 location:"Magnaga, Pantukan, Davao de Oro",
 description:"A relaxing beach destination known for its clear waters and peaceful atmosphere.",
 facebook:"https://facebook.com/",
@@ -41,8 +41,7 @@ images:[
     "images/MagnagaWaters.jpg",
     "images/MW1.jpg",
     "images/MW2.jpg",
-    "images/MW3.jpg"
-]
+    "images/MW3.jpg"]
 },
 {
 id:3,
@@ -60,27 +59,24 @@ name:"Peak Dakey",
 category:"Adventure",
 location:"Sitio Tapis, Tambongon, Pantukan, Davao de Oro",
 description:"Peak Dakey is a scenic hiking destination located in Sitio Tapis, Brgy. Tambongon, Pantukan, Davao de Oro. Known for its breathtaking mountain views, cool fresh air, and peaceful natural surroundings, it offers an unforgettable trekking experience for both beginners and seasoned hikers. Reaching the summit rewards visitors with panoramic views of the lush landscapes, making it a perfect spot for sunrise hikes, camping, photography, and reconnecting with nature.",
-facebook:"https://facebook.com/",
+facebook:"https://www.facebook.com/profile.php?id=61589189564990",
 images:[
     "images/DK1.jpg",
     "images/dk4.jpg",
     "images/Dk2.jpg",
-    "images/dk5.jpg"
-]
+    "images/dk5.jpg"]
 },
 
 {
 id:7,
 name:"PCCC HOSTEL & TRAINING CENTER",
-category:["Accomodation"],
+category:["Accommodation"],
 location:"Nat'l Highway, Kingking, Pantukan",
 description:"PCCMPC Hostel & Training Center offers comfortable accommodation and a convenient venue for seminars, workshops, training programs, and cooperative activities. It provides a welcoming space for guests, participants, and organizations looking for a practical place to stay, learn, and connect in Pantukan.",
-facebook:"https://www.facebook.com/pantukanwa",
+facebook:"https://www.facebook.com/pccmpchostel",
 images:[
     "images/Hostel1.jpg",
-    "images/Hostel4.png",
-
-]
+    "images/Hostel4.png",]
 },
 
 {
@@ -89,13 +85,42 @@ name:"Braytside Bakery & Cafe",
 category:["Restaurant","Coffee Shop"],
 location:"Poblacion, Kingking, Pantukan, Davao de Oro",
 description:"Braytside Bakery & Coffee is a cozy local spot offering freshly baked treats, delicious coffee, and a welcoming atmosphere. Perfect for a quick snack, coffee break, or relaxing time with family and friends.",
-facebook:"https://facebook.com/",
+facebook:"https://www.facebook.com/braytsidecafe",
 images:[
     "images/Braytside0.webp",
     "images/Braytside1.webp",
     "images/Braytside2.webp",
-    "images/Braytside3.webp"
-]
+    "images/Braytside3.webp"]
+},
+
+{
+id:9,
+name:"Diskanso Café & Car Care",
+category:["Coffee Shop"],
+location:"Mendoza, Kingking, Pantukan, Davao de Oro",
+description:"Braytside Bakery & Coffee is a cozy local spot offering freshly baked treats, delicious coffee, and a welcoming atmosphere. Perfect for a quick snack, coffee break, or relaxing time with family and friends.",
+facebook:"https://www.facebook.com/profile.php?id=61570451530106",
+images:[
+    "images/DSKNS1.jpg",
+    "images/DSKNS2.jpg",
+    "images/DSKNS3.jpg",
+    "images/DSKNS4.jpg"]
+},
+
+{
+id:10,
+name:"Winners Fit Camp",
+category:["GYM"],
+location:"Mendoza, Kingking, Pantukan, Davao de Oro",
+description:"Braytside Bakery & Coffee is a cozy local spot offering freshly baked treats, delicious coffee, and a welcoming atmosphere. Perfect for a quick snack, coffee break, or relaxing time with family and friends.",
+facebook:"https://www.facebook.com/profile.php?id=61570451530106",
+images:[
+    "images/WF0.jpg",
+    "images/WF01.jpg",
+    "images/WF02.jpg",
+    "images/WF1.jpg",
+    "images/WF2.jpg",
+    "images/WF3.jpg"]
 }
 
 
