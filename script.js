@@ -132,8 +132,7 @@ const destinations = [
         name: "Winners Fit Camp",
         category: ["GYM"],
         location: "Mendoza, Kingking, Pantukan, Davao de Oro",
-        description:
-            "KAPECHINO’S is a cozy spot in Pantukan where you can enjoy delicious coffee without breaking the bank. ☕✨ With coffee starting at just **₱49**, it’s a great place to chill, catch up with friends, or simply enjoy a relaxing cup. Whether you’re looking for a quick coffee break or a laid-back hangout, make KAPECHINO’S one of your stops when exploring Pantukan. 💚Tara, KAPECHINO’S tayo!*☕🌿",
+        description:            "Winners Fit Camp is a local fitness destination for people looking to stay active and work toward their fitness goals.",
         facebook: "https://www.facebook.com/profile.php?id=61570451530106",
         images: [
             "images/WF0.jpg",
@@ -152,7 +151,7 @@ const destinations = [
         category: ["Coffee Shop"],
         location: "Port Road Townsite, Kingking Pantukan Davao de oro(beside Port Inn)",
         description:
-            "Winners Fit Camp is a local fitness destination for people looking to stay active and work toward their fitness goals.",
+                    "KAPECHINO’S is a cozy spot in Pantukan where you can enjoy delicious coffee without breaking the bank. ☕✨ With coffee starting at just **₱49**, it’s a great place to chill, catch up with friends, or simply enjoy a relaxing cup. Whether you’re looking for a quick coffee break or a laid-back hangout, make KAPECHINO’S one of your stops when exploring Pantukan. 💚Tara, KAPECHINO’S tayo!*☕🌿",
         facebook: "https://www.facebook.com/kapechinos/",
         images: [
             "images/Kapechino1.jpg",
