@@ -144,6 +144,25 @@ const destinations = [
             "images/WF3.jpg"
         ]
     }
+    ,
+
+    {
+        id: 11,
+        name: "Kapechino's",
+        category: ["Coffee Shop"],
+        location: "Port Road Townsite, Kingking Pantukan Davao de oro(beside Port Inn)",
+        description:
+            "Winners Fit Camp is a local fitness destination for people looking to stay active and work toward their fitness goals.",
+        facebook: "https://www.facebook.com/kapechinos/",
+        images: [
+            "images/Kapechino1.jpg",
+            "images/Kapechino2.jpg",
+            "images/Kapechino3.jpg",
+            "images/Kapechino4.jpg",
+        ]
+    }
+
+    
 
 ];
 
@@ -456,28 +475,61 @@ container.addEventListener(
    CATEGORY BUTTONS
 ========================================= */
 
-document
-    .querySelectorAll(".category-card")
-    .forEach(button => {
+const categoryButtons =
+    document.querySelectorAll(".category-card");
 
-        button.addEventListener("click", () => {
+categoryButtons.forEach(button => {
 
-            const category =
-                button.dataset.category;
+    button.addEventListener("click", () => {
 
-            categoryFilter.value = category;
+        const category =
+            button.dataset.category;
+
+        // If clicking the currently active category,
+        // return to all places
+        if (
+            button.classList.contains("active") &&
+            category !== "all"
+        ) {
+            categoryFilter.value = "all";
+
+            categoryButtons.forEach(btn => {
+                btn.classList.remove("active");
+            });
+
+            document
+                .querySelector('[data-category="all"]')
+                .classList.add("active");
 
             filterPlaces();
 
-            document
-                .getElementById("allDestinations")
-                .scrollIntoView({
-                    behavior: "smooth"
-                });
+            return;
+        }
 
+        // Remove active state from all
+        categoryButtons.forEach(btn => {
+            btn.classList.remove("active");
         });
 
+        // Activate selected category
+        button.classList.add("active");
+
+        // Update dropdown too
+        categoryFilter.value = category;
+
+        // Apply filter
+        filterPlaces();
+
+        // Scroll to destinations
+        document
+            .getElementById("allDestinations")
+            .scrollIntoView({
+                behavior: "smooth"
+            });
+
     });
+
+});
 
 
 /* =========================================

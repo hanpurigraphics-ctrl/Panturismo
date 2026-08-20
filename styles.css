@@ -662,6 +662,22 @@ a {
         border-color .2s ease,
         box-shadow .2s ease;
 }
+.category-card.active {
+    background: var(--green);
+    border-color: var(--green);
+    color: #fff;
+
+    box-shadow:
+        0 10px 25px rgba(11, 125, 78, .18);
+}
+
+.category-card.active small {
+    color: rgba(255, 255, 255, .75);
+}
+
+.category-card.active .category-icon {
+    transform: scale(1.08);
+}
 
 .category-card:hover {
     transform: translateY(-4px);
@@ -669,6 +685,11 @@ a {
     border-color: #b7dbce;
 
     box-shadow: var(--shadow);
+}
+
+.category-card.active:hover {
+    background: var(--green-dark);
+    border-color: var(--green-dark);
 }
 
 .category-icon {
@@ -1026,7 +1047,7 @@ a {
 
     overflow-x: auto;
 
-    background: #111;
+    background: #ffffff;
 }
 
 .thumbnail {
@@ -1454,4 +1475,5 @@ footer {
         font-size: 25px;
     }
 
+    
 }
