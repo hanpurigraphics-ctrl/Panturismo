@@ -1,60 +1,152 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta name="theme-color" content="#1E3A5F">
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#0B7D4E">
 
-<title>PanTurismo</title>
+    <title>PanTurismo | Discover Pantukan</title>
 
-<link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
 
-<script defer src="script.js"></script>
-
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
 </head>
 
 <body>
 
-<header>
+<!-- =========================
+     HEADER
+========================= -->
 
-<div class="logo">
-    Pan<span>Turismo</span>
-</div>
+<header class="site-header" id="siteHeader">
+
+    <a href="#" class="logo">
+        Pan<span>Turismo</span>
+    </a>
+
+    <nav class="main-nav">
+        <a href="#home">Home</a>
+        <a href="#destinations">Destinations</a>
+        <a href="#categories">Categories</a>
+        <a href="#about">About</a>
+    </nav>
+
+    <a href="#destinations" class="header-btn">
+        Explore
+    </a>
 
 </header>
-<section class="hero">
 
-    <img src="Dron2.png" alt="Pantukan" class="hero-image">
+
+<!-- =========================
+     HERO
+========================= -->
+
+<section class="hero" id="home">
+
+    <img
+        src="Dron2.png"
+        alt="Aerial view of Pantukan"
+        class="hero-image"
+        fetchpriority="high"
+    >
 
     <div class="hero-overlay"></div>
 
     <div class="hero-content">
 
-        <h1>Discover Pantukan</h1>
+        <span class="eyebrow">
+            DISCOVER PANTUKAN
+        </span>
 
-        <p>Find Resorts, Diners, Adventures, Parks & More.</p>
+        <h1>
+            Explore the beauty<br>
+            of <span>Pantukan</span>
+        </h1>
 
-        <div class="search-container">
+        <p>
+            Your local guide to resorts, restaurants,
+            adventures, cafés, and places worth discovering.
+        </p>
 
-            <input
-                type="text"
-                id="searchInput"
-                placeholder="Search destination or barangay..."
-            >
+        <a href="#destinations" class="hero-btn">
+            Explore Destinations
+            <span>→</span>
+        </a>
 
-            <select id="categoryFilter">
-                <option value="all">All Categories</option>
-                <option value="Resort">Resorts</option>
-                <option value="Restaurant">Restaurants</option>
-                <option value="Adventure">Adventure</option>
-                <option value="GYM">GYM</option>
-                <option value="Pickleball">Pickleball</option>
-                <option value="Coffee Shop">Coffee Shops</option>
-                <option value="Accomodation">Accommodations</option>
-            </select>
+    </div>
+
+    <!-- Search Panel -->
+
+    <div class="search-panel">
+
+        <div class="search-tabs">
+
+            <button class="search-tab active">
+                <span>⌖</span>
+                Places
+            </button>
+
+            <span class="search-note">
+                Discover places around Pantukan
+            </span>
+
+        </div>
+
+        <div class="search-fields">
+
+            <div class="search-field search-main">
+
+                <span class="search-icon">⌕</span>
+
+                <div>
+                    <label for="searchInput">
+                        Where are you going?
+                    </label>
+
+                    <input
+                        type="search"
+                        id="searchInput"
+                        placeholder="Search destinations..."
+                        autocomplete="off"
+                    >
+                </div>
+
+            </div>
+
+            <div class="search-field">
+
+                <span class="search-icon">◉</span>
+
+                <div>
+                    <label for="categoryFilter">
+                        Category
+                    </label>
+
+                    <select id="categoryFilter">
+                        <option value="all">All Categories</option>
+                        <option value="Resort">Resorts</option>
+                        <option value="Restaurant">Restaurants</option>
+                        <option value="Adventure">Adventure</option>
+                        <option value="GYM">GYM</option>
+                        <option value="Pickleball">Pickleball</option>
+                        <option value="Coffee Shop">Coffee Shops</option>
+                        <option value="Accommodation">Accommodations</option>
+                    </select>
+                </div>
+
+            </div>
+
+            <button class="search-btn" id="searchBtn">
+                Search
+            </button>
 
         </div>
 
@@ -62,52 +154,255 @@
 
 </section>
 
-<section class="cards" id="cardsContainer">
 
-</section>
-<!-- MODAL -->
+<!-- =========================
+     MAIN
+========================= -->
 
-<div class="modal" id="destinationModal">
+<main>
+
+    <!-- Featured -->
+
+    <section class="section featured-section" id="destinations">
+
+        <div class="section-heading">
+
+            <div>
+                <span class="section-label">
+                    EXPLORE PANTUKAN
+                </span>
+
+                <h2>Featured Destinations</h2>
+
+                <p>
+                    Discover some of the places that make
+                    Pantukan worth exploring.
+                </p>
+            </div>
+
+            <a href="#allDestinations" class="view-link">
+                View all
+                <span>→</span>
+            </a>
+
+        </div>
+
+        <div class="featured-grid" id="featuredContainer">
+            <!-- Generated by JavaScript -->
+        </div>
+
+    </section>
+
+
+    <!-- Categories -->
+
+    <section class="section categories-section" id="categories">
+
+        <div class="section-heading">
+
+            <div>
+                <span class="section-label">
+                    FIND YOUR INTEREST
+                </span>
+
+                <h2>Explore by Category</h2>
+
+                <p>
+                    Find places based on what you want to experience.
+                </p>
+            </div>
+
+        </div>
+
+        <div class="category-grid">
+
+            <button class="category-card" data-category="Resort">
+                <span class="category-icon">🏝️</span>
+                <strong>Resorts</strong>
+                <small>Relax & unwind</small>
+            </button>
+
+            <button class="category-card" data-category="Restaurant">
+                <span class="category-icon">🍽️</span>
+                <strong>Restaurants</strong>
+                <small>Eat & enjoy</small>
+            </button>
+
+            <button class="category-card" data-category="Adventure">
+                <span class="category-icon">⛰️</span>
+                <strong>Adventure</strong>
+                <small>Explore nature</small>
+            </button>
+
+            <button class="category-card" data-category="Coffee Shop">
+                <span class="category-icon">☕</span>
+                <strong>Coffee Shops</strong>
+                <small>Coffee & chill</small>
+            </button>
+
+            <button class="category-card" data-category="Accommodation">
+                <span class="category-icon">🏨</span>
+                <strong>Accommodation</strong>
+                <small>Stay comfortably</small>
+            </button>
+
+            <button class="category-card" data-category="Pickleball">
+                <span class="category-icon">🏓</span>
+                <strong>Pickleball</strong>
+                <small>Play & compete</small>
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- All Destinations -->
+
+    <section class="section all-section" id="allDestinations">
+
+        <div class="section-heading">
+
+            <div>
+                <span class="section-label">
+                    PANTUKAN DIRECTORY
+                </span>
+
+                <h2>Discover More Places</h2>
+
+                <p>
+                    Browse our growing collection of local destinations.
+                </p>
+            </div>
+
+            <span class="result-count" id="resultCount"></span>
+
+        </div>
+
+        <div class="destination-grid" id="cardsContainer">
+            <!-- Generated by JavaScript -->
+        </div>
+
+    </section>
+
+
+    <!-- CTA -->
+
+    <section class="discover-section" id="about">
+
+        <div class="discover-content">
+
+            <span class="section-label light">
+                DISCOVER LOCAL
+
+            </span>
+
+            <h2>
+                There's more to Pantukan
+                than meets the eye.
+            </h2>
+
+            <p>
+                PanTurismo is a local tourism directory designed
+                to help visitors and locals discover places,
+                experiences, and businesses around Pantukan.
+            </p>
+
+            <a href="#destinations" class="light-btn">
+                Start Exploring →
+            </a>
+
+        </div>
+
+        <div class="discover-decoration">
+            ✦
+        </div>
+
+    </section>
+
+</main>
+
+
+<!-- =========================
+     MODAL
+========================= -->
+
+<div class="modal" id="destinationModal" aria-hidden="true">
 
     <div class="modal-box">
 
-        <span class="close">&times;</span>
+        <button
+            class="close"
+            id="closeModal"
+            aria-label="Close destination"
+        >
+            ×
+        </button>
 
         <div class="modal-gallery">
 
-            <img id="modalMainImage" class="main-image" src="" alt="">
+            <img
+                id="modalMainImage"
+                class="main-image"
+                src=""
+                alt=""
+            >
 
-            <button class="gallery-btn prev" id="prevBtn">&#10094;</button>
-            <button class="gallery-btn next" id="nextBtn">&#10095;</button>
+            <button
+                class="gallery-btn prev"
+                id="prevBtn"
+                aria-label="Previous image"
+            >
+                ‹
+            </button>
 
-            <div class="thumbnail-container" id="thumbnailContainer"></div>
+            <button
+                class="gallery-btn next"
+                id="nextBtn"
+                aria-label="Next image"
+            >
+                ›
+            </button>
+
+            <div
+                class="thumbnail-container"
+                id="thumbnailContainer"
+            ></div>
 
         </div>
 
         <div class="modal-content">
 
-            <span id="modalCategory" class="modal-category"></span>
+            <span
+                id="modalCategory"
+                class="modal-category"
+            ></span>
 
             <h2 id="modalTitle"></h2>
 
-            <p id="modalDescription"></p>
+            <p
+                id="modalDescription"
+                class="modal-description"
+            ></p>
 
             <div class="modal-info">
 
-                <p><strong>Address</strong></p>
+                <span>LOCATION</span>
+
                 <p id="modalAddress"></p>
 
             </div>
 
-         <a
-id="modalFacebook"
-class="facebook-btn"
-target="_blank">
-
-Visit Facebook Page
-
-</a>
-
+            <a
+                id="modalFacebook"
+                class="facebook-btn"
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                Visit Facebook Page
+                <span>→</span>
+            </a>
 
         </div>
 
@@ -116,55 +411,68 @@ Visit Facebook Page
 </div>
 
 
-</div>
+<!-- =========================
+     FOOTER
+========================= -->
 
-</div>
-
-</div>
 <footer>
 
-<div class="footer-container">
+    <div class="footer-container">
 
-    <div class="footer-brand">
+        <div class="footer-brand">
 
-        <h2>Pan<span>Turismo</span></h2>
+            <a href="#" class="logo">
+                Pan<span>Turismo</span>
+            </a>
 
-        <p>
-            Discover the beauty of Pantukan through one simple platform.
-            Explore resorts, dining, parks, adventures, and local attractions.
-        </p>
+            <p>
+                Discover the beauty of Pantukan through
+                one simple local tourism directory.
+            </p>
+
+        </div>
+
+        <div class="footer-column">
+
+            <h3>Explore</h3>
+
+            <a href="#home">Home</a>
+            <a href="#destinations">Destinations</a>
+            <a href="#categories">Categories</a>
+            <a href="#about">About</a>
+
+        </div>
+
+        <div class="footer-column">
+
+            <h3>Discover</h3>
+
+            <a href="#categories">Resorts</a>
+            <a href="#categories">Restaurants</a>
+            <a href="#categories">Adventure</a>
+            <a href="#categories">Coffee Shops</a>
+
+        </div>
+
+        <div class="footer-column">
+
+            <h3>Location</h3>
+
+            <p>📍 Pantukan, Davao de Oro</p>
+            <p>✉️ panturismo@email.com</p>
+
+        </div>
 
     </div>
 
-    <div class="footer-links">
+    <div class="footer-bottom">
 
-        <h3>Explore</h3>
-
-        <a href="#">Home</a>
-        <a href="#">Destinations</a>
-        <a href="#">Map</a>
-        <a href="#">Events</a>
+        © 2026 <strong>PanTurismo</strong>.
+        Discover local. Explore Pantukan.
 
     </div>
-
-    <div class="footer-contact">
-
-        <h3>Contact</h3>
-
-        <p>📍 Pantukan, Davao de Oro</p>
-        <p>✉️ panturismo@email.com</p>
-        <p>📞 +63 912 345 6789</p>
-
-    </div>
-
-</div>
-
-<div class="footer-bottom">
-
-    © 2026 <strong>PanTurismo</strong>. All Rights Reserved.
-
-</div>
 
 </footer>
+
 </body>
 </html>

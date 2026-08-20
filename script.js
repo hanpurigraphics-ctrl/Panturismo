@@ -1,389 +1,729 @@
+/* =========================================
+   PANTURISMO DATA
+========================================= */
+
 const destinations = [
 
-{
-id:6,
-name:"Leonora's Café and Resto",
-category:["Restaurant","Coffee Shop"],
-location:"Poblacion, Kingking, Pantukan, Davao de Oro",
-description:"Leonora's Café and Resto is a charming dining destination in Pantukan that blends vintage-inspired architecture with a warm and inviting atmosphere. Surrounded by lush gardens and classic Filipino design, it offers a cozy setting perfect for family gatherings, casual meetups, and relaxing meals. Guests can enjoy delicious food, handcrafted beverages, and a peaceful ambiance that combines timeless elegance with modern comfort.",
-facebook:"https://facebook.com/",
-images:[
-    "images/LCR0.jpg",
-    "images/LCR1.jpg",
-    "images/LCR2.jpg",
-    "images/LCR3.jpg"
-]
-},
-    
-{
-id:1,
-name:"Pantukan Water World",
-category:["Resort","Pickleball","Accomodation"],
-location:"Kingking, Pantukan",
-description:"A family-friendly beach resort with swimming pools and cottages perfect for weekend getaways.",
-facebook:"https://www.facebook.com/pantukanwa",
-images:[
-    "images/PantukanWaterWorld.jpg",
-    "images/PWW1.jpg",
-    "images/PWW2.jpg",
-    "images/PWW3.jpg"
-]
-},
+    {
+        id: 6,
+        name: "Leonora's Café and Resto",
+        category: ["Restaurant", "Coffee Shop"],
+        location: "Poblacion, Kingking, Pantukan, Davao de Oro",
+        description:
+            "Leonora's Café and Resto is a charming dining destination in Pantukan that blends vintage-inspired architecture with a warm and inviting atmosphere. Surrounded by lush gardens and classic Filipino design, it offers a cozy setting perfect for family gatherings, casual meetups, and relaxing meals.",
+        facebook: "https://facebook.com/",
+        images: [
+            "images/LCR0.jpg",
+            "images/LCR1.jpg",
+            "images/LCR2.jpg",
+            "images/LCR3.jpg"
+        ]
+    },
 
-{
-id:2,
-name:"Magnaga Waters",
-category:["Resort","Pickleball","Accommodation"],
-location:"Magnaga, Pantukan, Davao de Oro",
-description:"A relaxing beach destination known for its clear waters and peaceful atmosphere.",
-facebook:"https://facebook.com/",
-images:[
-    "images/MagnagaWaters.jpg",
-    "images/MW1.jpg",
-    "images/MW2.jpg",
-    "images/MW3.jpg"]
-},
-{
-id:3,
-name:"ASF Pickle Ball Court",
-category:"Pickleball",
-location:"Townsite,Kingking,Pantukan, Davao de Oro",
-description:"A  pickleball court open for beginners and experienced players.",
-facebook:"https://facebook.com/",
-image:"images/ASFPickle.jpg"
-},
+    {
+        id: 1,
+        name: "Pantukan Water World",
+        category: ["Resort", "Pickleball", "Accommodation"],
+        location: "Kingking, Pantukan",
+        description:
+            "A family-friendly beach resort with swimming pools and cottages perfect for weekend getaways.",
+        facebook: "https://www.facebook.com/pantukanwa",
+        images: [
+            "images/PantukanWaterWorld.jpg",
+            "images/PWW1.jpg",
+            "images/PWW2.jpg",
+            "images/PWW3.jpg"
+        ]
+    },
 
-{
-id:4,
-name:"Peak Dakey",
-category:"Adventure",
-location:"Sitio Tapis, Tambongon, Pantukan, Davao de Oro",
-description:"Peak Dakey is a scenic hiking destination located in Sitio Tapis, Brgy. Tambongon, Pantukan, Davao de Oro. Known for its breathtaking mountain views, cool fresh air, and peaceful natural surroundings, it offers an unforgettable trekking experience for both beginners and seasoned hikers. Reaching the summit rewards visitors with panoramic views of the lush landscapes, making it a perfect spot for sunrise hikes, camping, photography, and reconnecting with nature.",
-facebook:"https://www.facebook.com/profile.php?id=61589189564990",
-images:[
-    "images/DK1.jpg",
-    "images/dk4.jpg",
-    "images/Dk2.jpg",
-    "images/dk5.jpg"]
-},
+    {
+        id: 2,
+        name: "Magnaga Waters",
+        category: ["Resort", "Pickleball", "Accommodation"],
+        location: "Magnaga, Pantukan, Davao de Oro",
+        description:
+            "A relaxing beach destination known for its clear waters and peaceful atmosphere.",
+        facebook: "https://facebook.com/",
+        images: [
+            "images/MagnagaWaters.jpg",
+            "images/MW1.jpg",
+            "images/MW2.jpg",
+            "images/MW3.jpg"
+        ]
+    },
 
-{
-id:7,
-name:"PCCC HOSTEL & TRAINING CENTER",
-category:["Accommodation"],
-location:"Nat'l Highway, Kingking, Pantukan",
-description:"PCCMPC Hostel & Training Center offers comfortable accommodation and a convenient venue for seminars, workshops, training programs, and cooperative activities. It provides a welcoming space for guests, participants, and organizations looking for a practical place to stay, learn, and connect in Pantukan.",
-facebook:"https://www.facebook.com/pccmpchostel",
-images:[
-    "images/Hostel1.jpg",
-    "images/Hostel4.png",]
-},
+    {
+        id: 3,
+        name: "ASF Pickle Ball Court",
+        category: ["Pickleball"],
+        location: "Townsite, Kingking, Pantukan, Davao de Oro",
+        description:
+            "A pickleball court open for beginners and experienced players.",
+        facebook: "https://facebook.com/",
+        images: [
+            "images/ASFPickle.jpg"
+        ]
+    },
 
-{
-id:8,
-name:"Braytside Bakery & Cafe",
-category:["Restaurant","Coffee Shop"],
-location:"Poblacion, Kingking, Pantukan, Davao de Oro",
-description:"Braytside Bakery & Coffee is a cozy local spot offering freshly baked treats, delicious coffee, and a welcoming atmosphere. Perfect for a quick snack, coffee break, or relaxing time with family and friends.",
-facebook:"https://www.facebook.com/braytsidecafe",
-images:[
-    "images/Braytside0.webp",
-    "images/Braytside1.webp",
-    "images/Braytside2.webp",
-    "images/Braytside3.webp"]
-},
+    {
+        id: 4,
+        name: "Peak Dakey",
+        category: ["Adventure"],
+        location: "Sitio Tapis, Tambongon, Pantukan, Davao de Oro",
+        description:
+            "Peak Dakey is a scenic hiking destination located in Sitio Tapis, Brgy. Tambongon, Pantukan, Davao de Oro. Known for its breathtaking mountain views, cool fresh air, and peaceful natural surroundings, it offers an unforgettable trekking experience for both beginners and seasoned hikers.",
+        facebook: "https://www.facebook.com/profile.php?id=61589189564990",
+        images: [
+            "images/DK1.jpg",
+            "images/dk4.jpg",
+            "images/Dk2.jpg",
+            "images/dk5.jpg"
+        ]
+    },
 
-{
-id:9,
-name:"Diskanso Café & Car Care",
-category:["Coffee Shop"],
-location:"Mendoza, Kingking, Pantukan, Davao de Oro",
-description:"Braytside Bakery & Coffee is a cozy local spot offering freshly baked treats, delicious coffee, and a welcoming atmosphere. Perfect for a quick snack, coffee break, or relaxing time with family and friends.",
-facebook:"https://www.facebook.com/profile.php?id=61570451530106",
-images:[
-    "images/DSKNS1.jpg",
-    "images/DSKNS2.jpg",
-    "images/DSKNS3.jpg",
-    "images/DSKNS4.jpg"]
-},
+    {
+        id: 7,
+        name: "PCCC HOSTEL & TRAINING CENTER",
+        category: ["Accommodation"],
+        location: "Nat'l Highway, Kingking, Pantukan",
+        description:
+            "PCCMPC Hostel & Training Center offers comfortable accommodation and a convenient venue for seminars, workshops, training programs, and cooperative activities.",
+        facebook: "https://www.facebook.com/pccmpchostel",
+        images: [
+            "images/Hostel1.jpg",
+            "images/Hostel4.png"
+        ]
+    },
 
-{
-id:10,
-name:"Winners Fit Camp",
-category:["GYM"],
-location:"Mendoza, Kingking, Pantukan, Davao de Oro",
-description:"Braytside Bakery & Coffee is a cozy local spot offering freshly baked treats, delicious coffee, and a welcoming atmosphere. Perfect for a quick snack, coffee break, or relaxing time with family and friends.",
-facebook:"https://www.facebook.com/profile.php?id=61570451530106",
-images:[
-    "images/WF0.jpg",
-    "images/WF01.jpg",
-    "images/WF02.jpg",
-    "images/WF1.jpg",
-    "images/WF2.jpg",
-    "images/WF3.jpg"]
-}
+    {
+        id: 8,
+        name: "Braytside Bakery & Cafe",
+        category: ["Restaurant", "Coffee Shop"],
+        location: "Poblacion, Kingking, Pantukan, Davao de Oro",
+        description:
+            "Braytside Bakery & Coffee is a cozy local spot offering freshly baked treats, delicious coffee, and a welcoming atmosphere. Perfect for a quick snack, coffee break, or relaxing time with family and friends.",
+        facebook: "https://www.facebook.com/braytsidecafe",
+        images: [
+            "images/Braytside0.webp",
+            "images/Braytside1.webp",
+            "images/Braytside2.webp",
+            "images/Braytside3.webp"
+        ]
+    },
 
+    {
+        id: 9,
+        name: "Diskanso Café & Car Care",
+        category: ["Coffee Shop"],
+        location: "Mendoza, Kingking, Pantukan, Davao de Oro",
+        description:
+            "Diskanso Café & Car Care is a local coffee spot where visitors can enjoy drinks and a relaxed atmosphere.",
+        facebook: "https://www.facebook.com/profile.php?id=61570451530106",
+        images: [
+            "images/DSKNS1.jpg",
+            "images/DSKNS2.jpg",
+            "images/DSKNS3.jpg",
+            "images/DSKNS4.jpg"
+        ]
+    },
+
+    {
+        id: 10,
+        name: "Winners Fit Camp",
+        category: ["GYM"],
+        location: "Mendoza, Kingking, Pantukan, Davao de Oro",
+        description:
+            "Winners Fit Camp is a local fitness destination for people looking to stay active and work toward their fitness goals.",
+        facebook: "https://www.facebook.com/profile.php?id=61570451530106",
+        images: [
+            "images/WF0.jpg",
+            "images/WF01.jpg",
+            "images/WF02.jpg",
+            "images/WF1.jpg",
+            "images/WF2.jpg",
+            "images/WF3.jpg"
+        ]
+    }
 
 ];
 
-// ----------------------------
 
-const container = document.getElementById("cardsContainer");
+/* =========================================
+   DOM
+========================================= */
 
-const modal = document.getElementById("destinationModal");
-const modalMainImage = document.getElementById("modalMainImage");
-const thumbnailContainer = document.getElementById("thumbnailContainer");
+const container =
+    document.getElementById("cardsContainer");
 
-const prevBtn = document.getElementById("prevBtn");
-const nextBtn = document.getElementById("nextBtn");
+const featuredContainer =
+    document.getElementById("featuredContainer");
 
-let galleryImages = [];
-let currentImage = 0;
-const modalTitle = document.getElementById("modalTitle");
-const modalCategory = document.getElementById("modalCategory");
-const modalDescription = document.getElementById("modalDescription");
-const modalAddress = document.getElementById("modalAddress");
-const modalFacebook = document.getElementById("modalFacebook");
+const resultCount =
+    document.getElementById("resultCount");
 
-const closeBtn = document.querySelector(".close");
+const searchInput =
+    document.getElementById("searchInput");
 
-// ----------------------------
-function displayCards(list){
+const categoryFilter =
+    document.getElementById("categoryFilter");
 
-container.innerHTML="";
+const searchBtn =
+    document.getElementById("searchBtn");
 
-if(list.length===0){
+const modal =
+    document.getElementById("destinationModal");
 
-container.innerHTML=`
-<h2 style="
-width:100%;
-text-align:center;
-color:#666;
-margin-top:50px;
-">
-No destinations found.
-</h2>
-`;
+const modalMainImage =
+    document.getElementById("modalMainImage");
 
-return;
+const thumbnailContainer =
+    document.getElementById("thumbnailContainer");
 
-}
+const modalTitle =
+    document.getElementById("modalTitle");
 
-list.forEach(place=>{
+const modalCategory =
+    document.getElementById("modalCategory");
 
-const coverImage = place.images?.[0] || place.image;
+const modalDescription =
+    document.getElementById("modalDescription");
 
-container.innerHTML+=`
+const modalAddress =
+    document.getElementById("modalAddress");
 
-<div class="card" data-id="${place.id}">
+const modalFacebook =
+    document.getElementById("modalFacebook");
 
-<img src="${coverImage}" alt="${place.name}">
+const closeBtn =
+    document.getElementById("closeModal");
 
-<div class="info">
+const prevBtn =
+    document.getElementById("prevBtn");
 
-<span class="badge">
-    ${Array.isArray(place.category)
-        ? place.category.join(" | ")
-        : place.category}
-</span>
+const nextBtn =
+    document.getElementById("nextBtn");
 
-<h3>${place.name}</h3>
 
-<p class="location">
-📍 ${place.location}
-</p>
+/* =========================================
+   HELPERS
+========================================= */
 
-</div>
+function getCategories(place) {
 
-</div>
-
-`;
-
-});
-
-// Add click event to every card
-document.querySelectorAll(".card").forEach(card=>{
-
-card.addEventListener("click",()=>{
-
-const id = Number(card.dataset.id);
-
-openModal(id);
-
-});
-
-});
+    return Array.isArray(place.category)
+        ? place.category
+        : [place.category];
 
 }
 
-// ----------------------------
 
-function openModal(id){
+function getCoverImage(place) {
 
-    const place = destinations.find(item=>item.id===id);
-
-    if(!place) return;
-
-    loadGallery(place.images || [place.image]);
-
-    modalTitle.textContent = place.name;
-    modalCategory.textContent = place.category;
-    modalDescription.textContent = place.description;
-    modalAddress.textContent = place.location;
-    modalFacebook.href = place.facebook;
-
-    modal.style.display = "flex";
-
-    document.body.style.overflow = "hidden";
+    return place.images?.[0] || "";
 
 }
 
-// ----------------------------
 
-function closeModal(){
+function matchesCategory(place, category) {
 
-modal.style.display="none";
+    if (category === "all") {
+        return true;
+    }
 
-document.body.style.overflow="auto";
-
-}
-
-closeBtn.addEventListener("click",closeModal);
-
-// Click outside modal closes it
-modal.addEventListener("click",(e)=>{
-
-if(e.target===modal){
-
-closeModal();
+    return getCategories(place).includes(category);
 
 }
 
-});
 
-// ESC key closes modal
-document.addEventListener("keydown",(e)=>{
+/* =========================================
+   CARD HTML
+========================================= */
 
-if(e.key==="Escape"){
+function createCard(place, featured = false) {
 
-closeModal();
+    const image = getCoverImage(place);
+    const categories = getCategories(place);
+
+    return `
+        <article
+            class="${featured ? "featured-card" : "destination-card"}"
+            data-id="${place.id}"
+            tabindex="0"
+            role="button"
+            aria-label="View ${place.name}"
+        >
+
+            <div class="card-image">
+
+                <img
+                    src="${image}"
+                    alt="${place.name}"
+                    loading="lazy"
+                    decoding="async"
+                >
+
+                <span class="card-category">
+                    ${categories[0]}
+                </span>
+
+            </div>
+
+            <div class="card-content">
+
+                <h3>${place.name}</h3>
+
+                <p class="card-location">
+                    <span>⌖</span>
+                    ${place.location}
+                </p>
+
+                <span class="card-link">
+                    Explore →
+                </span>
+
+            </div>
+
+        </article>
+    `;
+}
+
+
+/* =========================================
+   RENDER FEATURED
+========================================= */
+
+function displayFeatured() {
+
+    const featured = destinations.slice(0, 5);
+
+    featuredContainer.innerHTML =
+        featured.map(place => createCard(place, true)).join("");
 
 }
 
-});
 
-// ============================
-// GALLERY FUNCTIONS
-// ============================
+/* =========================================
+   RENDER ALL
+========================================= */
 
-function loadGallery(images){
+function displayCards(list) {
 
-    galleryImages = images;
-    currentImage = 0;
+    resultCount.textContent =
+        `${list.length} ${list.length === 1 ? "place" : "places"}`;
 
-    updateGallery();
+    if (!list.length) {
+
+        container.innerHTML = `
+            <div class="no-results">
+                <div>⌕</div>
+                <h3>No destinations found</h3>
+                <p>
+                    Try another destination or category.
+                </p>
+            </div>
+        `;
+
+        return;
+    }
+
+    container.innerHTML =
+        list.map(place => createCard(place)).join("");
 
 }
 
-function updateGallery(){
 
-    modalMainImage.src = galleryImages[currentImage];
+/* =========================================
+   SEARCH + FILTER
+========================================= */
 
-    thumbnailContainer.innerHTML = "";
+function filterPlaces() {
 
-    galleryImages.forEach((image,index)=>{
+    const text =
+        searchInput.value
+            .trim()
+            .toLowerCase();
 
-        const img = document.createElement("img");
+    const category =
+        categoryFilter.value;
 
-        img.src = image;
+    const filtered =
+        destinations.filter(place => {
 
-        if(index === currentImage){
+            const searchableText = [
+                place.name,
+                place.location,
+                place.description,
+                ...getCategories(place)
+            ]
+                .join(" ")
+                .toLowerCase();
 
-            img.classList.add("active");
+            const matchesSearch =
+                !text ||
+                searchableText.includes(text);
 
+            return (
+                matchesSearch &&
+                matchesCategory(place, category)
+            );
+
+        });
+
+    displayCards(filtered);
+
+}
+
+
+/* =========================================
+   EVENT DELEGATION
+========================================= */
+
+function handleCardClick(event) {
+
+    const card =
+        event.target.closest("[data-id]");
+
+    if (!card) return;
+
+    const id =
+        Number(card.dataset.id);
+
+    openModal(id);
+
+}
+
+
+featuredContainer.addEventListener(
+    "click",
+    handleCardClick
+);
+
+container.addEventListener(
+    "click",
+    handleCardClick
+);
+
+
+featuredContainer.addEventListener(
+    "keydown",
+    event => {
+
+        if (
+            event.key !== "Enter" &&
+            event.key !== " "
+        ) {
+            return;
         }
 
-        img.onclick = ()=>{
+        const card =
+            event.target.closest("[data-id]");
 
-            currentImage = index;
+        if (!card) return;
 
-            updateGallery();
+        event.preventDefault();
 
+        openModal(Number(card.dataset.id));
+
+    }
+);
+
+
+container.addEventListener(
+    "keydown",
+    event => {
+
+        if (
+            event.key !== "Enter" &&
+            event.key !== " "
+        ) {
+            return;
         }
 
-        thumbnailContainer.appendChild(img);
+        const card =
+            event.target.closest("[data-id]");
+
+        if (!card) return;
+
+        event.preventDefault();
+
+        openModal(Number(card.dataset.id));
+
+    }
+);
+
+
+/* =========================================
+   CATEGORY BUTTONS
+========================================= */
+
+document
+    .querySelectorAll(".category-card")
+    .forEach(button => {
+
+        button.addEventListener("click", () => {
+
+            const category =
+                button.dataset.category;
+
+            categoryFilter.value = category;
+
+            filterPlaces();
+
+            document
+                .getElementById("allDestinations")
+                .scrollIntoView({
+                    behavior: "smooth"
+                });
+
+        });
 
     });
 
-}
 
-prevBtn.onclick = ()=>{
+/* =========================================
+   SEARCH EVENTS
+========================================= */
 
-    currentImage--;
+searchInput.addEventListener(
+    "input",
+    filterPlaces
+);
 
-    if(currentImage < 0){
+categoryFilter.addEventListener(
+    "change",
+    filterPlaces
+);
 
-        currentImage = galleryImages.length - 1;
+searchBtn.addEventListener(
+    "click",
+    () => {
+
+        filterPlaces();
+
+        document
+            .getElementById("allDestinations")
+            .scrollIntoView({
+                behavior: "smooth"
+            });
 
     }
+);
+
+
+/* =========================================
+   MODAL
+========================================= */
+
+let galleryImages = [];
+let currentImage = 0;
+
+
+function openModal(id) {
+
+    const place =
+        destinations.find(
+            item => item.id === id
+        );
+
+    if (!place) return;
+
+    galleryImages =
+        place.images || [];
+
+    currentImage = 0;
+
+    modalTitle.textContent =
+        place.name;
+
+    modalCategory.textContent =
+        getCategories(place).join(" • ");
+
+    modalDescription.textContent =
+        place.description;
+
+    modalAddress.textContent =
+        place.location;
+
+    modalFacebook.href =
+        place.facebook || "#";
 
     updateGallery();
 
-}
+    modal.classList.add("active");
 
-nextBtn.onclick = ()=>{
-
-    currentImage++;
-
-    if(currentImage >= galleryImages.length){
-
-        currentImage = 0;
-
-    }
-
-    updateGallery();
-
-}
-// ----------------------------
-
-displayCards(destinations);
-
-// SEARCH
-
-const search = document.getElementById("searchInput");
-
-const filter = document.getElementById("categoryFilter");
-
-function filterPlaces(){
-
-const text = search.value.toLowerCase();
-
-const category = filter.value;
-
-const filtered = destinations.filter(place=>{
-
-const matchesSearch =
-
-place.name.toLowerCase().includes(text) ||
-
-place.location.toLowerCase().includes(text);
-
-const matchesCategory =
-    category === "all" ||
-    (
-        Array.isArray(place.category)
-            ? place.category.includes(category)
-            : place.category === category
+    modal.setAttribute(
+        "aria-hidden",
+        "false"
     );
 
-return matchesSearch && matchesCategory;
-
-});
-
-displayCards(filtered);
+    document.body.classList.add(
+        "modal-open"
+    );
 
 }
 
-search.addEventListener("keyup",filterPlaces);
 
-filter.addEventListener("change",filterPlaces);
+function closeModal() {
+
+    modal.classList.remove("active");
+
+    modal.setAttribute(
+        "aria-hidden",
+        "true"
+    );
+
+    document.body.classList.remove(
+        "modal-open"
+    );
+
+}
+
+
+closeBtn.addEventListener(
+    "click",
+    closeModal
+);
+
+
+modal.addEventListener(
+    "click",
+    event => {
+
+        if (event.target === modal) {
+            closeModal();
+        }
+
+    }
+);
+
+
+document.addEventListener(
+    "keydown",
+    event => {
+
+        if (
+            event.key === "Escape" &&
+            modal.classList.contains("active")
+        ) {
+            closeModal();
+        }
+
+    }
+);
+
+
+/* =========================================
+   GALLERY
+========================================= */
+
+function updateGallery() {
+
+    if (!galleryImages.length) {
+        return;
+    }
+
+    const image =
+        galleryImages[currentImage];
+
+    modalMainImage.src = image;
+
+    modalMainImage.alt =
+        `Destination image ${currentImage + 1}`;
+
+    thumbnailContainer.innerHTML =
+        galleryImages
+            .map((src, index) => `
+                <button
+                    class="thumbnail ${index === currentImage ? "active" : ""}"
+                    data-index="${index}"
+                    aria-label="View image ${index + 1}"
+                >
+                    <img
+                        src="${src}"
+                        alt=""
+                        loading="lazy"
+                        decoding="async"
+                    >
+                </button>
+            `)
+            .join("");
+
+}
+
+
+thumbnailContainer.addEventListener(
+    "click",
+    event => {
+
+        const thumbnail =
+            event.target.closest(".thumbnail");
+
+        if (!thumbnail) return;
+
+        currentImage =
+            Number(thumbnail.dataset.index);
+
+        updateGallery();
+
+    }
+);
+
+
+prevBtn.addEventListener(
+    "click",
+    () => {
+
+        currentImage =
+            currentImage === 0
+                ? galleryImages.length - 1
+                : currentImage - 1;
+
+        updateGallery();
+
+    }
+);
+
+
+nextBtn.addEventListener(
+    "click",
+    () => {
+
+        currentImage =
+            currentImage === galleryImages.length - 1
+                ? 0
+                : currentImage + 1;
+
+        updateGallery();
+
+    }
+);
+
+
+/* =========================================
+   HEADER EFFECT
+========================================= */
+
+const header =
+    document.getElementById("siteHeader");
+
+
+window.addEventListener(
+    "scroll",
+    () => {
+
+        header.classList.toggle(
+            "scrolled",
+            window.scrollY > 20
+        );
+
+    },
+    { passive: true }
+);
+
+
+/* =========================================
+   INITIAL LOAD
+========================================= */
+
+displayFeatured();
+displayCards(destinations);
