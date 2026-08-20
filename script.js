@@ -5,6 +5,23 @@
 const destinations = [
 
     {
+        id: 12,
+        name: "Pantukan Eco Tourism Park",
+        category: ["Park"],
+        location: "Nursery, Kingking Pantukan Davao de oro",
+        description:
+                    "Pantukan Eco-Tourism Park is a welcoming green space in Pantukan designed for relaxation, recreation, and enjoying the outdoors. With landscaped gardens, walking paths, shaded areas, benches, and a colorful playground, the park offers a pleasant spot for families, friends, and visitors to spend time together. Its clean and refreshing surroundings make it a great place to unwind and experience one of Pantukan’s community destinations.",
+        facebook: "https://www.facebook.com",
+        images: [
+            "images/Ecopark0.jpg",
+            "images/Ecopark1.jpg",
+            "images/Ecopark2.jpg",
+            "images/Ecopark3.jpg",
+        ]
+    }
+    ,
+    {
+
         id: 6,
         name: "Leonora's Café and Resto",
         category: ["Restaurant", "Coffee Shop"],
@@ -161,7 +178,6 @@ const destinations = [
         ]
     }
 
-    
 
 ];
 
